@@ -2,6 +2,32 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+### Environment variables
+
+Create a local env file and set your chat provider credentials:
+
+```bash
+cp .env.example .env.local
+```
+
+Required variables:
+
+- `CHAT_PROVIDER` (`xai` or `openrouter`)
+
+For xAI (Grok):
+
+- `XAI_API_KEY`
+- `XAI_MODEL` (optional, defaults to `grok-4.20-reasoning`)
+- `XAI_SITE_URL` (optional)
+- `XAI_SITE_NAME` (optional)
+
+For OpenRouter (optional fallback):
+
+- `OPENROUTER_API_KEY`
+- `OPENROUTER_MODEL` (optional, defaults to `openai/gpt-5.2`)
+- `OPENROUTER_SITE_URL` (optional)
+- `OPENROUTER_SITE_NAME` (optional)
+
 First, run the development server:
 
 ```bash

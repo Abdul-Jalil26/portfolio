@@ -27,11 +27,7 @@ type Experience = {
 };
 
 const USE_API = true;
-const API_KEY = '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';
-const API_MODEL = 'openai/gpt-5.2';
-const API_URL = 'https://openrouter.ai/api/v1/chat/completions';
-const API_SITE = 'https://abduljaliltamjid.dev';
-const API_NAME = 'Abdul Jalil Tamjid Portfolio';
+const API_URL = '/api/chat';
 
 const PROFILE = {
   name: 'Abdul Jalil Tamjid',
@@ -186,28 +182,17 @@ function getDemoResponse(input: string): string {
 }
 
 async function callApi(history: { role: ChatRole; content: string }[]): Promise<string> {
-  const messages = [
-    {
-      role: 'system',
-      content: `You are a concise portfolio assistant for ${PROFILE.name}. Use first-person voice and only use known profile facts.`,
-    },
-    ...history.slice(-12),
-  ];
-
   const res = await fetch(API_URL, {
     method: 'POST',
     headers: {
-      Authorization: `Bearer ${API_KEY}`,
       'Content-Type': 'application/json',
-      'HTTP-Referer': API_SITE,
-      'X-Title': API_NAME,
     },
-    body: JSON.stringify({ model: API_MODEL, messages, temperature: 0.6, max_tokens: 600 }),
+    body: JSON.stringify({ history }),
   });
 
   if (!res.ok) throw new Error(`API ${res.status}`);
-  const data = (await res.json()) as { choices?: Array<{ message?: { content?: string } }> };
-  const reply = data.choices?.[0]?.message?.content;
+  const data = (await res.json()) as { reply?: string };
+  const reply = data.reply;
   if (!reply) throw new Error('Empty response from API');
   return reply;
 }
