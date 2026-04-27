@@ -1,0 +1,107 @@
+export default function AboutSection() {
+  return (
+    <div
+      dangerouslySetInnerHTML={{
+        __html: `
+          <section class="page-section" id="about">
+            <div class="section-head reveal">
+              <div class="section-eyebrow"><span class="num">01</span> About me</div>
+              <h2 class="section-title">Engineer by craft, <span class="script">researcher</span> by curiosity</h2>
+              <p class="section-sub">
+                I work at the intersection of building and asking questions —
+                shipping production software while contributing to applied
+                machine-learning research.
+              </p>
+            </div>
+
+            <div class="about-grid">
+              <div class="about-text reveal">
+                <p>
+                  I'm <strong>Abdul Jalil Tamjid</strong>, a software engineer and ML
+                  researcher based in Dhaka, Bangladesh. Over the past six years
+                  I've split my time between writing production systems for
+                  startups and publishing applied research on distributed ML
+                  and natural-language understanding.
+                </p>
+                <p>
+                  My work tends to live where infrastructure meets intelligence —
+                  inference pipelines, retrieval systems, the unglamorous middle
+                  layer that makes modern ML actually run. I treat engineering as
+                  a writing practice: read carefully, edit ruthlessly, ship
+                  something useful.
+                </p>
+                <p>
+                  Outside of work I review papers for a couple of conferences,
+                  mentor undergraduates at BUET, and write a fortnightly newsletter
+                  about systems and ML for a few hundred curious engineers.
+                </p>
+
+                <div class="quick-facts">
+                  <div class="fact">
+                    <div class="num">6<span>+</span></div>
+                    <div class="label">Years of experience</div>
+                  </div>
+                  <div class="fact">
+                    <div class="num">12</div>
+                    <div class="label">Papers published</div>
+                  </div>
+                  <div class="fact">
+                    <div class="num">40<span>+</span></div>
+                    <div class="label">Projects shipped</div>
+                  </div>
+                  <div class="fact">
+                    <div class="num">3.2<span>k</span></div>
+                    <div class="label">OSS stars on GitHub</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="about-skills reveal d2">
+                <div class="skills-card">
+                  <h4><i class="fas fa-code"></i>Languages</h4>
+                  <ul class="skill-tags">
+                    <li>Python</li><li>TypeScript</li><li>Go</li><li>Rust</li>
+                    <li>C++</li><li>SQL</li><li>Bash</li>
+                  </ul>
+                </div>
+                <div class="skills-card">
+                  <h4><i class="fas fa-brain"></i>ML &amp; Research</h4>
+                  <ul class="skill-tags">
+                    <li>PyTorch</li><li>JAX</li><li>HuggingFace</li>
+                    <li>scikit-learn</li><li>LangChain</li><li>vLLM</li>
+                    <li>Weights &amp; Biases</li>
+                  </ul>
+                </div>
+                <div class="skills-card">
+                  <h4><i class="fas fa-server"></i>Infrastructure</h4>
+                  <ul class="skill-tags">
+                    <li>Docker</li><li>Kubernetes</li><li>AWS</li><li>GCP</li>
+                    <li>Postgres</li><li>Redis</li><li>Kafka</li><li>Terraform</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="what-grid">
+              <div class="what-card reveal">
+                <div class="what-icon"><i class="fas fa-cube"></i></div>
+                <h4>Engineering</h4>
+                <p>Designing and shipping reliable backend systems, ML pipelines, and developer tools that real teams depend on every day.</p>
+              </div>
+              <div class="what-card reveal d2">
+                <div class="what-icon"><i class="fas fa-flask"></i></div>
+                <h4>Research</h4>
+                <p>Investigating practical problems in NLP, distributed ML, and model evaluation — and writing them up for venues that actually publish code.</p>
+              </div>
+              <div class="what-card reveal d3">
+                <div class="what-icon"><i class="fas fa-pen-nib"></i></div>
+                <h4>Writing &amp; Mentoring</h4>
+                <p>Teaching what I learn through essays, talks, code reviews, and the occasional 1:1 with a junior engineer trying to figure out their next move.</p>
+              </div>
+            </div>
+          </section>
+        `,
+      }}
+    />
+  );
+}
