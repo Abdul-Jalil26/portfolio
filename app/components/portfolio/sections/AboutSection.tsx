@@ -60,7 +60,7 @@ export default function AboutSection() {
                 <div class="skills-card">
                   <h4><i class="fas fa-code"></i>Languages</h4>
                   <ul class="skill-tags">
-                    <li>Python</li><li>TypeScript</li><li>Go</li><li>Rust</li>
+                    <li>Python</li><li>FastAPI</li><li>TypeScript</li><li>Go</li><li>Rust</li>
                     <li>C++</li><li>SQL</li><li>Bash</li>
                   </ul>
                 </div>
