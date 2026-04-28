@@ -18,11 +18,11 @@ export default function ProjectsSection() {
                 <div class="project-image"><i class="project-icon fas fa-bolt"></i></div>
                 <div class="project-body">
                   <div class="project-tag">Production · 2025</div>
-                  <h4>Loom — LLM Serving Runtime</h4>
+                  <h4>Basic LLM Agent</h4>
                   <p>A multi-tenant scheduler for serving large language models at sub-100ms p99 latency. Cut serving costs by 38% across two production clusters.</p>
-                  <div class="project-stack"><span>Rust</span><span>CUDA</span><span>Triton</span><span>K8s</span></div>
+                  <div class="project-stack"><span>LLM</span><span>CUDA</span><span>Python</span></div>
                   <div class="project-links">
-                    <a href="#"><i class="fab fa-github"></i>Source</a>
+                    <a href="https://github.com/Abdul-Jalil26/Basic-LLM-Agent"><i class="fab fa-github"></i>Source</a>
                     <a href="#"><i class="fas fa-arrow-up-right-from-square"></i>Live demo</a>
                     <a href="#"><i class="fas fa-file-pdf"></i>Paper</a>
                   </div>

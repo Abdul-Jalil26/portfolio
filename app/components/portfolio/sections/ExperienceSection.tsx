@@ -14,7 +14,7 @@ export default function ExperienceSection() {
             </div>
 
             <div class="timeline">
-            
+
               <div class="tl-item reveal">
                 <div class="tl-card">
                   <div class="tl-meta">
@@ -65,6 +65,23 @@ export default function ExperienceSection() {
                     extended into a workshop paper.
                   </p>
                   <div class="tl-stack"><span>First Class First</span><span>Merit Scholarships</span><span>Dean's List</span><span>Dean's Award</span></div>
+                </div>
+              </div>
+
+              <div class="tl-item reveal">
+                <div class="tl-card">
+                  <div class="tl-meta">
+                    <span class="tl-period">2025 — Ongoing</span>
+                    <span class="tl-type">Education</span>
+                  </div>
+                  <div class="tl-role">M.Sc. in Computer Science &amp; Engineering</div>
+                  <div class="tl-org">Mawlana Bhashani Science and Technology University (MBSTU)</div>
+                  <p class="tl-desc">
+                    Postgraduate thesis on
+                    transformer compression for low-resource languages, later
+                    extended into a workshop paper.
+                  </p>
+            
                 </div>
               </div>
 
