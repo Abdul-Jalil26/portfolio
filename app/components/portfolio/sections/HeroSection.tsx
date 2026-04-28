@@ -40,7 +40,7 @@ export default function HeroSection() {
                 </div>
                 <div class="portrait">
   <img 
-    src="/jalil.jpg" 
+  src="/portfolio/jalil.jpg"
     alt="Abdul Jalil Tamjid" 
     style="width:100%; height:100%; object-fit:cover; border-radius:50%;"
   />
