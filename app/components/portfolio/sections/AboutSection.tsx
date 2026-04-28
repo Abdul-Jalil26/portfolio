@@ -38,11 +38,11 @@ export default function AboutSection() {
 
                 <div class="quick-facts">
                   <div class="fact">
-                    <div class="num">6<span>+</span></div>
+                    <div class="num">1<span>+</span></div>
                     <div class="label">Years of experience</div>
                   </div>
                   <div class="fact">
-                    <div class="num">12</div>
+                    <div class="num">5</div>
                     <div class="label">Papers published</div>
                   </div>
                   <div class="fact">

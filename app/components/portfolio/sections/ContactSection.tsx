@@ -20,7 +20,7 @@ export default function ContactSection() {
                     <div class="c-icon"><i class="fas fa-envelope"></i></div>
                     <div>
                       <div class="label">Email</div>
-                      <div class="value"><a href="mailto:hello@abduljaliltamjid.dev">hello@abduljaliltamjid.dev</a></div>
+                      <div class="value"><a href="mailto:ajtamjid@gmail.com">ajtamjid@gmail.com</a></div>
                     </div>
                   </div>
                   <div class="c-card">
@@ -34,7 +34,7 @@ export default function ContactSection() {
                     <div class="c-icon"><i class="fas fa-location-dot"></i></div>
                     <div>
                       <div class="label">Location</div>
-                      <div class="value">Banani, Dhaka, Bangladesh</div>
+                      <div class="value">Nikunjo-2, Dhaka, Bangladesh</div>
                     </div>
                   </div>
                   <div class="availability">

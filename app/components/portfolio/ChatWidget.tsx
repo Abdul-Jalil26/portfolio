@@ -328,9 +328,7 @@ export default function ChatWidget() {
           </button>
         </form>
 
-        <div className="chat-foot">
-          Powered by <strong>AI</strong> · Trained on Tamjid&#39;s portfolio
-        </div>
+       
       </div>
     </div>
   );

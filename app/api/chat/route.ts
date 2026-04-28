@@ -27,10 +27,10 @@ const XAI_RESPONSES_URL = 'https://api.x.ai/v1/responses';
 const PORTFOLIO_CONTEXT = [
   'Name: Abdul Jalil Tamjid',
   'Role: Software Engineer and ML Researcher',
-  'Location: Banani, Dhaka, Bangladesh',
+  'Location: Nikunjo-2, Dhaka, Bangladesh',
   'Projects: Loom (LLM serving runtime), Sift (typed query engine), Vellum (reproducible notebooks)',
   'Primary skills: Python, TypeScript, Rust, Kubernetes, AWS, GCP, Postgres, Redis, Kafka',
-  'Contact: hello@abduljaliltamjid.dev',
+  'Contact: ajtamjid@gmail.com',
 ].join('\n');
 
 function normalizeHistory(value: unknown): ChatTurn[] {
