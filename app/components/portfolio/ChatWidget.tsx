@@ -33,8 +33,8 @@ const PROFILE = {
   name: 'Abdul Jalil Tamjid',
   role: 'Software Engineer & ML Researcher',
   yearsExperience: 6,
-  location: { area: 'Banani', city: 'Dhaka', country: 'Bangladesh' },
-  contact: { email: 'hello@abduljaliltamjid.dev', phone: '+880 1700 000 000' },
+  location: { area: 'Nikunjo-2', city: 'Dhaka', country: 'Bangladesh' },
+  contact: { email: 'ajtamjid@gmail.com', phone: '+880 1700 000 000' },
   skills: {
     primaryLangs: ['Python', 'TypeScript'],
     otherLangs: ['Go', 'Rust', 'C++', 'SQL', 'Bash'],

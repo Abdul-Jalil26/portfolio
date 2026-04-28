@@ -60,23 +60,23 @@ export default function AboutSection() {
                 <div class="skills-card">
                   <h4><i class="fas fa-code"></i>Languages</h4>
                   <ul class="skill-tags">
-                    <li>Python</li><li>FastAPI</li><li>TypeScript</li><li>Go</li><li>Rust</li>
-                    <li>C++</li><li>SQL</li><li>Bash</li>
+                    <li>Python</li><li>FastAPI</li><li>Django</li><li>TypeScript</li><li>C#</li><li>C++</li>
+                    <li>C</li><li>SQL</li>
                   </ul>
                 </div>
                 <div class="skills-card">
                   <h4><i class="fas fa-brain"></i>ML &amp; Research</h4>
                   <ul class="skill-tags">
-                    <li>PyTorch</li><li>JAX</li><li>HuggingFace</li>
+                    <li>PyTorch</li><li>Tensorflow</li><li>HuggingFace</li>
                     <li>scikit-learn</li><li>LangChain</li><li>vLLM</li>
-                    <li>Weights &amp; Biases</li>
+                    <li>Weights &amp; Biases</li><li>NLP</li>
                   </ul>
                 </div>
                 <div class="skills-card">
                   <h4><i class="fas fa-server"></i>Infrastructure</h4>
                   <ul class="skill-tags">
                     <li>Docker</li><li>Kubernetes</li><li>AWS</li><li>GCP</li>
-                    <li>Postgres</li><li>Redis</li><li>Kafka</li><li>Terraform</li>
+                    <li>Postgres</li><li>MySQL</li><li>GitLab</li>
                   </ul>
                 </div>
               </div>

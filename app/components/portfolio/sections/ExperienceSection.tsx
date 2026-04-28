@@ -14,39 +14,23 @@ export default function ExperienceSection() {
             </div>
 
             <div class="timeline">
-              <div class="tl-item reveal">
-                <div class="tl-card">
-                  <div class="tl-meta">
-                    <span class="tl-period">Jan 2024 — Present</span>
-                    <span class="tl-type">Full-time · Remote</span>
-                  </div>
-                  <div class="tl-role">Senior Machine Learning Engineer</div>
-                  <div class="tl-org">AnthemicLabs <span class="dot">●</span> Inference &amp; Platform team</div>
-                  <p class="tl-desc">
-                    Lead engineer on the model-serving platform powering the
-                    company's flagship LLM API. Cut p99 latency by 38% and
-                    halved per-token serving cost through a custom batching
-                    scheduler. Co-author on two infrastructure papers.
-                  </p>
-                  <div class="tl-stack"><span>Rust</span><span>Python</span><span>CUDA</span><span>K8s</span><span>Triton</span></div>
-                </div>
-              </div>
+            
 
               <div class="tl-item reveal">
                 <div class="tl-card">
                   <div class="tl-meta">
-                    <span class="tl-period">Aug 2022 — Dec 2023</span>
-                    <span class="tl-type">Full-time · Hybrid</span>
+                    <span class="tl-period">May 2024 — Aug 2025</span>
+                    <span class="tl-type">Part-time · Onsite</span>
                   </div>
-                  <div class="tl-role">Research Scientist (NLP)</div>
-                  <div class="tl-org">TechCo Research <span class="dot">●</span> Bangalore, India</div>
+                  <div class="tl-role">Research Assistant</div>
+                  <div class="tl-org">TechCo Research <span class="dot">●</span> Tangail, Bangladesh</div>
                   <p class="tl-desc">
                     Worked on retrieval-augmented generation and evaluation
                     methods for long-context models. Shipped a grounded-QA
                     dataset adopted by three university courses; first author
                     on three peer-reviewed papers.
                   </p>
-                  <div class="tl-stack"><span>PyTorch</span><span>HuggingFace</span><span>FAISS</span><span>Ray</span></div>
+                  <div class="tl-stack"><span>PyTorch</span><span>Tensorflow</span><span>Machine Learning</span><span>HuggingFace</span><span>FAISS</span></div>
                 </div>
               </div>
 
@@ -64,7 +48,7 @@ export default function ExperienceSection() {
                     services. Owned the on-call rotation and the post-incident
                     writeups nobody else wanted.
                   </p>
-                  <div class="tl-stack"><span>Go</span><span>Postgres</span><span>Kafka</span><span>gRPC</span></div>
+                  <div class="tl-stack"><span>Python</span><span>FastAPI</span><span>Postgres</span><span>Next.js</span><span>LLMs</span></div>
                 </div>
               </div>
 

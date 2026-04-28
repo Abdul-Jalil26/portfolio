@@ -47,16 +47,17 @@ export default function ResearchSection() {
 
       <div className="pub-list">
         <article className="pub reveal">
-          <div className="pub-year">2026</div>
+          <div className="pub-year">2025</div>
           <div>
             <div className="pub-venue">
-              <span className="star">*</span> ICLR Spotlight
+              <span className="star">*</span> Journal Paper
             </div>
             <h4 className="pub-name">
-              <a href="#">On the Memorization-Generalization Frontier in Sparse Mixture-of-Experts</a>
+              <a href="#">DAM-Net: Dual Attention Multi-task Framework for Coronary Artery Segmentation and
+                Stenosis Severity Classification</a>
             </h4>
             <p className="pub-authors">
-              <span className="self">A. Hossain</span>, R. Okafor, M. Lindqvist, J. Park
+              <span className="self">Abdul Jalil Tamjid</span>, Mohammad Motiur Rahman, Sadia Tasnim
             </p>
             <div className="pub-links">
               <a href="#">PDF</a>
@@ -70,12 +71,12 @@ export default function ResearchSection() {
         <article className="pub reveal">
           <div className="pub-year">2025</div>
           <div>
-            <div className="pub-venue">OSDI Conference Paper</div>
+            <div className="pub-venue">ICCIT Conference Paper</div>
             <h4 className="pub-name">
-              <a href="#">Loom: Adaptive Batching for Heterogeneous LLM Serving</a>
+              <a href="#">Performance Comparison of Spatial Filters for Denoising Rayleigh, Rician, and Gamma Noise Models in Ultrasound Images</a>
             </h4>
             <p className="pub-authors">
-              <span className="self">A. Hossain</span>, S. Hassanian, T. Brooks
+              <span className="self">Monir Hossain</span>, Abdul Jalil Tamjid, Mohammad Motiur Rahman ...
             </p>
             <div className="pub-links">
               <a href="#">PDF</a>
@@ -87,14 +88,14 @@ export default function ResearchSection() {
         </article>
 
         <article className="pub reveal">
-          <div className="pub-year">2024</div>
+          <div className="pub-year">2026</div>
           <div>
-            <div className="pub-venue">TMLR Journal</div>
+            <div className="pub-venue">ICEFront Conference Paper</div>
             <h4 className="pub-name">
               <a href="#">A Note on Calibration Drift in Long-Lived Production Models</a>
             </h4>
             <p className="pub-authors">
-              L. Aoki, <span className="self">A. Hossain</span>, R. Okafor
+              <span className="self">Abdul Jalil Tamjid</span>, Tresha Rani Robi Das, Abdur Rakib ...
             </p>
             <div className="pub-links">
               <a href="#">PDF</a>
