@@ -1,10 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // No basePath needed anymore
-  images: {
-    unoptimized: true, // important for GitHub Pages
-  },
+  /* config options here */
+  allowedDevOrigins: ['localhost'],
 };
 
 export default nextConfig;
