@@ -53,11 +53,11 @@ export default function ExperienceSection() {
               <div class="tl-item reveal">
                 <div class="tl-card">
                   <div class="tl-meta">
-                    <span class="tl-period">Jul 2020 — Jul 2022</span>
+                    <span class="tl-period">Aug 2025 — Ongoing</span>
                     <span class="tl-type">Full-time · Onsite</span>
                   </div>
-                  <div class="tl-role">Software Engineer</div>
-                  <div class="tl-org">Praxis Fintech <span class="dot">●</span> Dhaka, Bangladesh</div>
+                  <div class="tl-role">AI/ML Engineer</div>
+                  <div class="tl-org">Ethics Advance Technology Limited<span class="dot">●</span> Dhaka, Bangladesh</div>
                   <p class="tl-desc">
                     Built the real-time fraud-detection backend serving 11M+
                     users. Migrated a 14-service legacy stack to four well-typed
@@ -68,39 +68,28 @@ export default function ExperienceSection() {
                 </div>
               </div>
 
-              <div class="tl-item reveal">
-                <div class="tl-card">
-                  <div class="tl-meta">
-                    <span class="tl-period">May 2019 — Aug 2019</span>
-                    <span class="tl-type">Internship</span>
-                  </div>
-                  <div class="tl-role">Software Engineering Intern</div>
-                  <div class="tl-org">Tigris Systems <span class="dot">●</span> Singapore</div>
-                  <p class="tl-desc">
-                    Returned-internship offer after shipping a query optimiser
-                    for the analytics product. Sole engineer on the project;
-                    still in production five years later.
-                  </p>
-                  <div class="tl-stack"><span>C++</span><span>SQL</span><span>Linux</span></div>
-                </div>
-              </div>
+      
+
+
+              
 
               <div class="tl-item reveal">
                 <div class="tl-card">
                   <div class="tl-meta">
-                    <span class="tl-period">2015 — 2019</span>
+                    <span class="tl-period">2019 — 2025</span>
                     <span class="tl-type">Education</span>
                   </div>
                   <div class="tl-role">B.Sc. in Computer Science &amp; Engineering</div>
-                  <div class="tl-org">Bangladesh University of Engineering &amp; Technology (BUET)</div>
+                  <div class="tl-org">Mawlana Bhashani Science and Technology University (MBSTU)</div>
                   <p class="tl-desc">
                     Graduated top 5% of class. Undergraduate thesis on
                     transformer compression for low-resource languages, later
                     extended into a workshop paper.
                   </p>
-                  <div class="tl-stack"><span>CGPA 3.92/4.00</span><span>Dean's Award</span></div>
+                  <div class="tl-stack"><span>CGPA 3.91/4.00</span><span>Dean's Award</span></div>
                 </div>
               </div>
+
             </div>
           </section>
         `,
