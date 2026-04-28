@@ -14,7 +14,6 @@ export default function Sidebar() {
               </div>
               <div class="brand-name">Abdul Jalil Tamjid</div>
               <div class="brand-role">AI Engineer · Researcher</div>
-              <div class="brand-script">Abdul Jalil Tamjid</div>
             </div>
 
             <nav class="nav">

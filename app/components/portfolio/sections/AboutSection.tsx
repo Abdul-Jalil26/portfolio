@@ -18,7 +18,7 @@ export default function AboutSection() {
               <div class="about-text reveal">
                 <p>
                   I'm <strong>Abdul Jalil Tamjid</strong>, a software engineer and ML
-                  researcher based in Dhaka, Bangladesh. Over the past six years
+                  researcher based in Dhaka, Bangladesh. Over the past one years
                   I've split my time between writing production systems for
                   startups and publishing applied research on distributed ML
                   and natural-language understanding.
@@ -46,8 +46,8 @@ export default function AboutSection() {
                     <div class="label">Papers published</div>
                   </div>
                   <div class="fact">
-                    <div class="num">40<span>+</span></div>
-                    <div class="label">Projects shipped</div>
+                    <div class="num">20<span>+</span></div>
+                    <div class="label">Projects completed</div>
                   </div>
                   <div class="fact">
                     <div class="num">3.2<span>k</span></div>

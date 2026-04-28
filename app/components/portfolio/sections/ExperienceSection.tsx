@@ -15,7 +15,6 @@ export default function ExperienceSection() {
 
             <div class="timeline">
             
-
               <div class="tl-item reveal">
                 <div class="tl-card">
                   <div class="tl-meta">
@@ -23,7 +22,7 @@ export default function ExperienceSection() {
                     <span class="tl-type">Part-time · Onsite</span>
                   </div>
                   <div class="tl-role">Research Assistant</div>
-                  <div class="tl-org">TechCo Research <span class="dot">●</span> Tangail, Bangladesh</div>
+                  <div class="tl-org">Mawlana Bhashani Science and Technology University <span class="dot">●</span> Tangail, Bangladesh</div>
                   <p class="tl-desc">
                     Worked on retrieval-augmented generation and evaluation
                     methods for long-context models. Shipped a grounded-QA
@@ -52,11 +51,6 @@ export default function ExperienceSection() {
                 </div>
               </div>
 
-      
-
-
-              
-
               <div class="tl-item reveal">
                 <div class="tl-card">
                   <div class="tl-meta">
@@ -70,7 +64,7 @@ export default function ExperienceSection() {
                     transformer compression for low-resource languages, later
                     extended into a workshop paper.
                   </p>
-                  <div class="tl-stack"><span>CGPA 3.91/4.00</span><span>Dean's Award</span></div>
+                  <div class="tl-stack"><span>First Class First</span><span>Merit Scholarships</span><span>Dean's List</span><span>Dean's Award</span></div>
                 </div>
               </div>
 

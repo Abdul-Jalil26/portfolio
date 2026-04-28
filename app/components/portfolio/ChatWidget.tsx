@@ -39,7 +39,7 @@ const PROFILE = {
     primaryLangs: ['Python', 'TypeScript'],
     otherLangs: ['Go', 'Rust', 'C++', 'SQL', 'Bash'],
     ml: ['PyTorch', 'JAX', 'HuggingFace', 'scikit-learn', 'LangChain', 'vLLM'],
-    infra: ['Docker', 'Kubernetes', 'AWS', 'GCP', 'Postgres', 'Redis', 'Kafka', 'Terraform'],
+    infra: ['Docker', 'Kubernetes', 'AWS', 'GCP', 'Postgres', 'Redis'],
   },
   projects: [
     {
@@ -313,7 +313,7 @@ export default function ChatWidget() {
 
         {showSuggestions && (
           <div className="chat-suggestions">
-            {['Tell me about Loom', 'Do you know Rust?', 'What\'s your rate?', 'Show publications', 'Where are you based?', 'Fun fact?'].map((s) => (
+            {['Tell me about your experiance', 'Do you know Rust?', 'What\'s your rate?', 'Show publications', 'Where are you based?', 'Fun fact?'].map((s) => (
               <button key={s} className="suggestion" type="button" onClick={() => void sendMessage(s)}>
                 {s}
               </button>
