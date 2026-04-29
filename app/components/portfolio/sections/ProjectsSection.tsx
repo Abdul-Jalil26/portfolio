@@ -13,7 +13,22 @@ export default function ProjectsSection() {
               </p>
             </div>
 
-            <div class="projects-grid">
+              <div class="projects-grid">
+              <article class="project reveal">
+                <div class="project-image"><i class="project-icon fas fa-bolt"></i></div>
+                <div class="project-body">
+                  <div class="project-tag">Production · 2026</div>
+                  <h4>AI Powered Medical Education Platform</h4>
+                  <p>A multi-tenant scheduler for serving large language models at sub-100ms p99 latency. Cut serving costs by 38% across two production clusters.</p>
+                  <div class="project-stack"><span>LLM</span><span>CUDA</span><span>Python</span></div>
+                  <div class="project-links">
+                    <a href="https://ai-lms.eatlbd.com/"><i class="fab fa-github"></i>Source</a>
+                    <a href="https://ai-lms.eatlbd.com/"><i class="fas fa-arrow-up-right-from-square"></i>Live demo</a>
+                 
+                  </div>
+                </div>
+              </article>
+
               <article class="project reveal">
                 <div class="project-image"><i class="project-icon fas fa-bolt"></i></div>
                 <div class="project-body">
@@ -77,9 +92,9 @@ export default function ProjectsSection() {
                 <div class="project-image"><i class="project-icon fas fa-language"></i></div>
                 <div class="project-body">
                   <div class="project-tag">Course Project · 2022</div>
-                  <h4>BanglaBench — NLP Benchmark</h4>
-                  <p>The first comprehensive evaluation suite for Bengali NLP models, covering 9 tasks and 14 datasets. Adopted by 3 university courses.</p>
-                  <div class="project-stack"><span>Python</span><span>HuggingFace</span></div>
+                  <h4>On-Campus Job Management System</h4>
+                  <p>A web-based application for managing job postings and applications for students and employers on campus.</p>
+                  <div class="project-stack"><span>Python</span><span>Django</span></div>
                   <div class="project-links">
                     <a href="https://github.com/Abdul-Jalil26/On-Campus-Job-Management-System"><i class="fab fa-github"></i>Source</a>
                     <a href="#"><i class="fas fa-file-pdf"></i>Paper</a>
