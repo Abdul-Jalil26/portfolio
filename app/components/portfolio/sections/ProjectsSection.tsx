@@ -33,11 +33,11 @@ export default function ProjectsSection() {
                 <div class="project-image"><i class="project-icon fas fa-database"></i></div>
                 <div class="project-body">
                   <div class="project-tag">Open Source · 2024</div>
-                  <h4>Sift — Typed Query Engine</h4>
+                  <h4>Inventory Management System</h4>
                   <p>Vectorised execution layer over Apache Arrow. Started as an internal tool, now used by ~60 teams across two companies.</p>
                   <div class="project-stack"><span>Rust</span><span>Arrow</span><span>SQL</span></div>
                   <div class="project-links">
-                    <a href="#"><i class="fab fa-github"></i>Source</a>
+                    <a href="https://github.com/Abdul-Jalil26/django_app"><i class="fab fa-github"></i>Source</a>
                     <a href="#"><i class="fas fa-book"></i>Docs</a>
                   </div>
                 </div>
@@ -47,38 +47,27 @@ export default function ProjectsSection() {
                 <div class="project-image"><i class="project-icon fas fa-book-open"></i></div>
                 <div class="project-body">
                   <div class="project-tag">Open Source · 2023</div>
-                  <h4>Vellum — Reproducible Notebooks</h4>
+                  <h4>Vector Embeddings Project</h4>
                   <p>Lightweight environment that pins data, code, and stochastic state in a single artifact. 4.2k stars; used in two NeurIPS workshops.</p>
                   <div class="project-stack"><span>Python</span><span>TypeScript</span><span>Docker</span></div>
                   <div class="project-links">
-                    <a href="#"><i class="fab fa-github"></i>Source</a>
+                    <a href="https://github.com/Abdul-Jalil26/Vector_Embedding"><i class="fab fa-github"></i>Source</a>
                     <a href="#"><i class="fas fa-arrow-up-right-from-square"></i>Try it</a>
                   </div>
                 </div>
               </article>
 
-              <article class="project reveal d3">
-                <div class="project-image"><i class="project-icon fas fa-shield-halved"></i></div>
-                <div class="project-body">
-                  <div class="project-tag">Production · 2022</div>
-                  <h4>Atlas — Graph-Native Feature Store</h4>
-                  <p>Backed real-time fraud detection at a fintech serving 11M users. Migrated from a 14-service legacy stack down to four well-typed services.</p>
-                  <div class="project-stack"><span>Go</span><span>Postgres</span><span>Kafka</span></div>
-                  <div class="project-links">
-                    <a href="#"><i class="fas fa-newspaper"></i>Case study</a>
-                  </div>
-                </div>
-              </article>
+           
 
               <article class="project reveal d2">
                 <div class="project-image"><i class="project-icon fas fa-mobile-screen"></i></div>
                 <div class="project-body">
-                  <div class="project-tag">Side Project · 2021</div>
-                  <h4>Field — Mobile Data Capture</h4>
+                  <div class="project-tag">Course Project · 2021</div>
+                  <h4>Responsive Travel Website</h4>
                   <p>A small thing built for an ecology lab in Tanzania that turned into a thing. Now deployed across 12 conservation projects.</p>
                   <div class="project-stack"><span>React Native</span><span>SQLite</span></div>
                   <div class="project-links">
-                    <a href="#"><i class="fab fa-github"></i>Source</a>
+                    <a href="https://github.com/Abdul-Jalil26/Responsive_Travel_Website_Desing"><i class="fab fa-github"></i>Source</a>
                     <a href="#"><i class="fas fa-arrow-up-right-from-square"></i>Project page</a>
                   </div>
                 </div>
@@ -87,12 +76,12 @@ export default function ProjectsSection() {
               <article class="project reveal d3">
                 <div class="project-image"><i class="project-icon fas fa-language"></i></div>
                 <div class="project-body">
-                  <div class="project-tag">Research · 2022</div>
+                  <div class="project-tag">Course Project · 2022</div>
                   <h4>BanglaBench — NLP Benchmark</h4>
                   <p>The first comprehensive evaluation suite for Bengali NLP models, covering 9 tasks and 14 datasets. Adopted by 3 university courses.</p>
                   <div class="project-stack"><span>Python</span><span>HuggingFace</span></div>
                   <div class="project-links">
-                    <a href="#"><i class="fab fa-github"></i>Source</a>
+                    <a href="https://github.com/Abdul-Jalil26/On-Campus-Job-Management-System"><i class="fab fa-github"></i>Source</a>
                     <a href="#"><i class="fas fa-file-pdf"></i>Paper</a>
                   </div>
                 </div>

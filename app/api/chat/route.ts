@@ -21,8 +21,19 @@ type XaiResponsesApi = {
   }>;
 };
 
+type GeminiResponse = {
+  candidates?: Array<{
+    content?: {
+      parts?: Array<{
+        text?: string;
+      }>;
+    };
+  }>;
+};
+
 const OPENROUTER_URL = 'https://openrouter.ai/api/v1/chat/completions';
 const XAI_RESPONSES_URL = 'https://api.x.ai/v1/responses';
+const GEMINI_BASE_URL = 'https://generativelanguage.googleapis.com/v1beta/models';
 
 const PORTFOLIO_CONTEXT = [
   'Name: Abdul Jalil Tamjid',
@@ -68,20 +79,52 @@ function extractXaiReply(data: XaiResponsesApi): string {
   return collected;
 }
 
+function extractGeminiReply(data: GeminiResponse): string {
+  const collected = (data.candidates ?? [])
+    .flatMap((candidate) => candidate.content?.parts ?? [])
+    .filter((part) => typeof part.text === 'string' && part.text.trim())
+    .map((part) => part.text!.trim())
+    .join('\n');
+
+  return collected;
+}
+
+function buildGeminiContents(history: ChatTurn[]) {
+  return history.map((turn) => ({
+    role: turn.role === 'assistant' ? 'model' : 'user',
+    parts: [{ text: turn.content }],
+  }));
+}
+
 export async function POST(request: Request) {
   const provider = (process.env.CHAT_PROVIDER ?? '').toLowerCase();
-  const useXai = provider === 'xai' || (!!process.env.XAI_API_KEY && provider !== 'openrouter');
+  const useGemini = provider === 'gemini' || (!!process.env.GEMINI_API_KEY && provider !== 'xai' && provider !== 'openrouter');
+  const useXai = !useGemini && (provider === 'xai' || (!!process.env.XAI_API_KEY && provider !== 'openrouter'));
 
-  const apiKey = useXai ? process.env.XAI_API_KEY : process.env.OPENROUTER_API_KEY;
-  const model = useXai ? process.env.XAI_MODEL ?? 'grok-3-mini' : process.env.OPENROUTER_MODEL ?? 'openai/gpt-5.2';
-  const siteUrl = useXai ? process.env.XAI_SITE_URL : process.env.OPENROUTER_SITE_URL;
-  const siteName = useXai
-    ? process.env.XAI_SITE_NAME ?? 'Portfolio Chat Assistant'
-    : process.env.OPENROUTER_SITE_NAME ?? 'Portfolio Chat Assistant';
-  const apiUrl = useXai ? XAI_RESPONSES_URL : OPENROUTER_URL;
+  const apiKey = useGemini
+    ? process.env.GEMINI_API_KEY
+    : useXai
+      ? process.env.XAI_API_KEY
+      : process.env.OPENROUTER_API_KEY;
+  const model = useGemini
+    ? process.env.GEMINI_MODEL ?? 'gemini-2.0-flash'
+    : useXai
+      ? process.env.XAI_MODEL ?? 'grok-3-mini'
+      : process.env.OPENROUTER_MODEL ?? 'openai/gpt-5.2';
+  const siteUrl = useGemini ? process.env.GEMINI_SITE_URL : useXai ? process.env.XAI_SITE_URL : process.env.OPENROUTER_SITE_URL;
+  const siteName = useGemini
+    ? process.env.GEMINI_SITE_NAME ?? 'Portfolio Chat Assistant'
+    : useXai
+      ? process.env.XAI_SITE_NAME ?? 'Portfolio Chat Assistant'
+      : process.env.OPENROUTER_SITE_NAME ?? 'Portfolio Chat Assistant';
+  const apiUrl = useGemini
+    ? `${GEMINI_BASE_URL}/${model}:generateContent?key=${encodeURIComponent(apiKey!)}`
+    : useXai
+      ? XAI_RESPONSES_URL
+      : OPENROUTER_URL;
 
   if (!apiKey) {
-    const missingVar = useXai ? 'XAI_API_KEY' : 'OPENROUTER_API_KEY';
+    const missingVar = useGemini ? 'GEMINI_API_KEY' : useXai ? 'XAI_API_KEY' : 'OPENROUTER_API_KEY';
     return NextResponse.json({ error: `Missing ${missingVar}` }, { status: 500 });
   }
 
@@ -104,9 +147,9 @@ export async function POST(request: Request) {
   ];
 
   const xaiInput = buildConversationInput(history);
+  const geminiContents = buildGeminiContents(history);
 
   const headers: Record<string, string> = {
-    Authorization: `Bearer ${apiKey}`,
     'Content-Type': 'application/json',
     'X-Title': siteName,
   };
@@ -115,12 +158,31 @@ export async function POST(request: Request) {
     headers['HTTP-Referer'] = siteUrl;
   }
 
+  if (!useGemini) {
+    headers.Authorization = `Bearer ${apiKey}`;
+  }
+
   try {
     const upstream = await fetch(apiUrl, {
       method: 'POST',
       headers,
       body: JSON.stringify({
-        ...(useXai
+        ...(useGemini
+          ? {
+              generationConfig: {
+                temperature: 0.6,
+                maxOutputTokens: 600,
+              },
+              systemInstruction: {
+                parts: [
+                  {
+                    text: 'You are a concise portfolio assistant for Abdul Jalil Tamjid. Use first-person voice and only use known profile facts.',
+                  },
+                ],
+              },
+              contents: geminiContents,
+            }
+          : useXai
           ? {
               model,
               input: xaiInput,
@@ -139,10 +201,14 @@ export async function POST(request: Request) {
     if (!upstream.ok) {
       const errorBody = await upstream.text();
       const status = upstream.status >= 400 && upstream.status < 500 ? upstream.status : 502;
-      const authMessage = useXai
+      const authMessage = useGemini
+        ? 'Gemini authentication failed. Check GEMINI_API_KEY.'
+        : useXai
         ? 'xAI authentication failed. Check XAI_API_KEY.'
         : 'OpenRouter authentication failed. Check OPENROUTER_API_KEY.';
-      const billingMessage = useXai
+      const billingMessage = useGemini
+        ? 'Gemini access denied. Check your Google AI Studio quota or API permissions.'
+        : useXai
         ? 'xAI access denied. Your team may not have credits or licenses yet.'
         : 'OpenRouter access denied. Check plan, quota, or account permissions.';
       const message = upstream.status === 401 ? authMessage : upstream.status === 403 ? billingMessage : 'Upstream API request failed';
@@ -153,7 +219,9 @@ export async function POST(request: Request) {
     }
 
     const data = (await upstream.json()) as OpenRouterResponse | XaiResponsesApi;
-    const reply = useXai
+    const reply = useGemini
+      ? extractGeminiReply(data as GeminiResponse)
+      : useXai
       ? extractXaiReply(data as XaiResponsesApi)
       : (data as OpenRouterResponse).choices?.[0]?.message?.content?.trim();
 
