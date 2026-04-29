@@ -13,35 +13,37 @@ export default function ResearchSection() {
           how we build, serve, and evaluate models at scale.
         </p>
       </div>
+<div className="areas-grid">
+  <div className="area-card reveal">
+    <div className="icon">A</div>
+    <h4>Agentic AI Systems</h4>
+    <p>
+      Designing and developing intelligent agentic systems using LangChain,
+      LangGraph, and MCP, focusing on multi-step reasoning, tool integration,
+      and autonomous decision-making workflows.
+    </p>
+  </div>
 
-      <div className="areas-grid">
-        <div className="area-card reveal">
-          <div className="icon">S</div>
-          <h4>Distributed ML Systems</h4>
-          <p>
-            Inference scheduling, KV-cache management, admission control,
-            and multi-tenant serving for transformer workloads.
-          </p>
-        </div>
+  <div className="area-card reveal d1">
+    <div className="icon">N</div>
+    <h4>Natural Language Processing</h4>
+    <p>
+      Building NLP-powered applications with emphasis on text generation,
+      retrieval-augmented systems, and efficient processing of real-world
+      textual data across diverse domains.
+    </p>
+  </div>
 
-        <div className="area-card reveal d1">
-          <div className="icon">N</div>
-          <h4>Natural Language Processing</h4>
-          <p>
-            Retrieval-augmented generation, long-context reasoning,
-            and low-resource language modeling for Bengali and similar languages.
-          </p>
-        </div>
-
-        <div className="area-card reveal d2">
-          <div className="icon">E</div>
-          <h4>Evaluation and Reliability</h4>
-          <p>
-            Building realistic benchmarks that catch calibration drift,
-            hallucinations, and distribution shifts before production impact.
-          </p>
-        </div>
-      </div>
+  <div className="area-card reveal d2">
+    <div className="icon">M</div>
+    <h4>MLOps & Data Pipelines</h4>
+    <p>
+      Developing and maintaining robust pipelines for text data generation,
+      preprocessing, and deployment, ensuring scalability, reliability,
+      and continuous integration of machine learning systems.
+    </p>
+  </div>
+</div>
 
       <div className="pubs-title">- Selected Publications -</div>
 

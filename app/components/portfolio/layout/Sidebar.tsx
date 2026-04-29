@@ -29,7 +29,9 @@ export default function Sidebar() {
             <div class="socials">
               <a href="https://github.com/Abdul-Jalil26" aria-label="GitHub"><i class="fab fa-github"></i></a>
               <a href="https://www.linkedin.com/in/abdul-jalil-tamjid-25a6671a5" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-              <a href="https://x.com/Abdul_Jalil__?t=vywGphndYAza37MrG7OQRw&s=09" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+             <a href="https://abduljalil.great-site.net/?i=1" aria-label="Website">
+  <i class="fas fa-globe"></i>
+</a>
               <a href="https://scholar.google.com/citations?view_op=new_profile&hl=en" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
             </div>
 
