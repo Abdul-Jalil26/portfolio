@@ -14,15 +14,34 @@ export default function BlogSection() {
             </div>
 
             <div class="blog-grid">
-              <a class="post reveal">
-                <div class="post-cover"><i class="fas fa-server"></i></div>
-                <div class="post-body">
-                  <div class="post-meta"><span class="post-cat">Systems</span><span class="post-date">Mar 14, 2026</span></div>
-                  <h4>The schedulers we deserve</h4>
-                  <p>Three years of writing batch schedulers, and why the boring ones have aged best.</p>
-                  <span class="post-read">Read article <i class="fas fa-arrow-right"></i></span>
-                </div>
-              </a>
+           <a 
+  href="https://medium.com/@ajtamjid/why-accuracy-alone-is-misleading-in-machine-learning-057d661295d0" 
+  target="_blank" 
+  class="post reveal"
+>
+  <div class="post-cover">
+    <i class="fas fa-brain"></i>
+  </div>
+
+  <div class="post-body">
+    <div class="post-meta">
+      <span class="post-cat">Machine Learning</span>
+      <span class="post-date">April 2026</span>
+    </div>
+
+    <h4>Why Accuracy Alone Is Misleading in Machine Learning</h4>
+
+    <p>
+      Accuracy can create a false sense of success—especially in imbalanced datasets. 
+      This article explores why relying solely on accuracy can fail real-world models 
+      and how metrics like precision, recall, and AUC provide deeper insights.
+    </p>
+
+    <span class="post-read">
+      Read article <i class="fas fa-arrow-right"></i>
+    </span>
+  </div>
+</a>
 
               <a class="post reveal d1">
                 <div class="post-cover"><i class="fas fa-brain"></i></div>
