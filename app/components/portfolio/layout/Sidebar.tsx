@@ -32,7 +32,7 @@ export default function Sidebar() {
              <a href="https://abduljalil.great-site.net/?i=1" aria-label="Website">
   <i class="fas fa-globe"></i>
 </a>
-              <a href="https://scholar.google.com/citations?view_op=new_profile&hl=en" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+              <a href="https://scholar.google.com/citations?hl=en&user=0yhU-moAAAAJ&view_op=list_works&gmla=AIqSsVtsTtXJiEaQ_5AeyVhwhEfO68JXqc_NBUxpeyxAQIzgS3ol1lkcaeElRx9zIDuwpnrEBDUdhDXxoaaOIjZonEbkZc6loHCxYyRv_R4S4nI7pkahGWvSD6iq21HpiQ" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
             </div>
 
             <div class="copyright">

@@ -16,7 +16,7 @@ export default function Footer() {
              <a href="https://abduljalil.great-site.net/?i=1" aria-label="Website">
   <i class="fas fa-globe"></i>
 </a>
-              <a href="#" aria-label="Scholar"><i class="fas fa-graduation-cap"></i></a>
+              <a href="https://scholar.google.com/citations?hl=en&user=0yhU-moAAAAJ&view_op=list_works&gmla=AIqSsVtsTtXJiEaQ_5AeyVhwhEfO68JXqc_NBUxpeyxAQIzgS3ol1lkcaeElRx9zIDuwpnrEBDUdhDXxoaaOIjZonEbkZc6loHCxYyRv_R4S4nI7pkahGWvSD6iq21HpiQ" aria-label="Scholar"><i class="fas fa-graduation-cap"></i></a>
             </div>
           </footer>
         `,

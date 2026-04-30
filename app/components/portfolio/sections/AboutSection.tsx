@@ -16,25 +16,17 @@ export default function AboutSection() {
 
             <div class="about-grid">
               <div class="about-text reveal">
-                <p>
-                  I'm <strong>Abdul Jalil Tamjid</strong>, a software engineer and ML
-                  researcher based in Dhaka, Bangladesh. Over the past one years
-                  I've split my time between writing production systems for
-                  startups and publishing applied research on distributed ML
-                  and natural-language understanding.
-                </p>
-                <p>
-                  My work tends to live where infrastructure meets intelligence —
-                  inference pipelines, retrieval systems, the unglamorous middle
-                  layer that makes modern ML actually run. I treat engineering as
-                  a writing practice: read carefully, edit ruthlessly, ship
-                  something useful.
-                </p>
-                <p>
-                  Outside of work I review papers for a couple of conferences,
-                  mentor undergraduates at BUET, and write a fortnightly newsletter
-                  about systems and ML for a few hundred curious engineers.
-                </p>
+             <p>
+  I'm <strong>Abdul Jalil Tamjid</strong>, an engineer working in AI and machine learning, based in Dhaka, Bangladesh. Over the past year, I have worked on building practical systems and exploring applied research in areas like computer vision, deep learning, and intelligent systems.
+</p>
+
+<p>
+  My work focuses on understanding how models perform in real-world settings—from data preprocessing and model design to deployment and evaluation. I am particularly interested in building systems that are not only accurate, but also reliable, interpretable, and aligned with real-world impact.
+</p>
+
+<p>
+  Outside of my core work, I explore new ideas through hands-on experimentation, write about machine learning and systems, and enjoy helping others learn and grow in the field.
+</p>
 
                 <div class="quick-facts">
                   <div class="fact">
@@ -49,10 +41,10 @@ export default function AboutSection() {
                     <div class="num">20<span>+</span></div>
                     <div class="label">Projects completed</div>
                   </div>
-                  <div class="fact">
-                    <div class="num">3.2<span>k</span></div>
-                    <div class="label">OSS stars on GitHub</div>
-                  </div>
+                 <div class="fact">
+  <div class="num">10+</div>
+  <div class="label">ML & AI Projects</div>
+</div>
                 </div>
               </div>
 
