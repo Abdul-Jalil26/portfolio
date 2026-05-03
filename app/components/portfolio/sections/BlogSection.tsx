@@ -43,15 +43,32 @@ export default function BlogSection() {
   </div>
 </a>
 
-              <a class="post reveal d1">
-                <div class="post-cover"><i class="fas fa-brain"></i></div>
-                <div class="post-body">
-                  <div class="post-meta"><span class="post-cat">ML</span><span class="post-date">Feb 28, 2026</span></div>
-                  <h4>Things I no longer believe about transformers</h4>
-                  <p>Five intuitions I held in 2022 that haven't survived production scale.</p>
-                  <span class="post-read">Read article <i class="fas fa-arrow-right"></i></span>
-                </div>
-              </a>
+
+
+     <a class="post reveal d1" href="https://medium.com/p/9b0b5b4460bf?postPublishedType=initial" target="_blank">
+  <div class="post-cover">
+    <i class="fas fa-code"></i>
+  </div>
+
+  <div class="post-body">
+    <div class="post-meta">
+      <span class="post-cat">Software Architecture</span>
+      <span class="post-date">May 2026</span>
+    </div>
+
+    <h4>What is an API? A Beginner-Friendly Guide to How the Web Really Works</h4>
+
+    <p>
+      Ever wondered what happens behind the scenes when you book a train ticket, 
+      scroll through an app, or log into a website? This article breaks down APIs, 
+      monolithic architecture, and how modern applications communicate — with real-world examples.
+    </p>
+
+    <span class="post-read">
+      Read article <i class="fas fa-arrow-right"></i>
+    </span>
+  </div>
+</a>
 
               <a class="post reveal d2">
                 <div class="post-cover"><i class="fas fa-pen-nib"></i></div>

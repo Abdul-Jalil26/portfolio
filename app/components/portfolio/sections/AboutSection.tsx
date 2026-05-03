@@ -25,7 +25,7 @@ export default function AboutSection() {
 </p>
 
 <p>
-  Outside of my core work, I explore new ideas through hands-on experimentation, write about machine learning and systems, and enjoy helping others learn and grow in the field.
+  Beyond my core work, I explore new ideas through hands-on experimentation, write about machine learning and systems, and enjoy helping others learn and grow in the field.
 </p>
 
                 <div class="quick-facts">
